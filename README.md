@@ -6,7 +6,7 @@
 
 ```bash
 # Get smachara2 files
-git clone https://github.com/smachara2/cumulus-repository.git
+git clone https://smachara@github.com/smachara/cumulus-repository.git
 cd cumulus-repository
 
 # Start the app, run containers
