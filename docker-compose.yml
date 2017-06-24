@@ -1,10 +1,10 @@
 web:
-  image: 'gitlab/gitlab-ce:latest'
+  image: 'smachara2/gitlab:latest'
   restart: always
-  hostname: 'gitlab.example.com'
+  hostname: 'cumulus-repo.com'
   environment:
     GITLAB_OMNIBUS_CONFIG: |
-      external_url 'https://gitlab.example.com'
+      external_url 'https://157.159.232.15/'
   ports:
     - '80:80'
     - '443:443'
