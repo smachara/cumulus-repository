@@ -1,14 +1,14 @@
 web:
-  image: 'smachara2/gitlab:latest'
+  image: 'gitlab/gitlab-ce:latest'
   restart: always
   hostname: 'cumulus-repo.com'
   environment:
     GITLAB_OMNIBUS_CONFIG: |
-      external_url 'https://157.159.232.15/'
+      external_url 'http://157.159.232.15/'
   ports:
     - '80:80'
     - '443:443'
-    - '22:22'
+    - '2224:22'
   volumes:
     - '/srv/gitlab/config:/etc/gitlab'
     - '/srv/gitlab/logs:/var/log/gitlab'
