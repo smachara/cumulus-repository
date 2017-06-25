@@ -3,6 +3,10 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 cd $DIR/gitlab
-docker build -t smachara2/gitlab:$1 -t smachara2/gitlab:latest .
+docker build -t gitlab  .
+
+docker tag gitlab smachara2/gitlab:$1
+docker tag gitlab smachara2/gitlab:latest
+
 docker push smachara2/gitlab:$1
 docker push smachara2/gitlab:latest
