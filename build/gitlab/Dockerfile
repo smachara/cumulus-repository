@@ -1,4 +1,5 @@
 FROM ubuntu:14.04
+
 MAINTAINER Samer Machara
 
 # Install required packages
@@ -28,7 +29,7 @@ RUN mkdir -p /opt/gitlab/sv/sshd/supervise \
 # Disabling use DNS in ssh since it tends to slow connecting
 RUN echo "UseDNS no" >> /etc/ssh/sshd_config
 
-# Prepare default configuration
+## Prepare default configuration
 RUN ( \
   echo "" && \
   echo "# Docker options" && \
